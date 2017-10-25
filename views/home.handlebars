@@ -1,0 +1,24 @@
+{{#section 'head'}}
+<link rel="stylesheet" href="/styles/auth.css">
+{{/section}}
+
+
+<div class="container">
+    <form action="/login" method="post">
+        {{#if errorMessage}}
+        <div class="alert alert-danger">
+            {{errorMessage}}
+        </div>
+        {{/if}}
+
+
+        <label for="inputUsername">User Name</label><br>
+        <input type="text" id="inputUsername" name="username" placeholder="User name.."><br>
+
+        <label for="inputPassword">Password</label><br>
+        <input type="password" id="inputPassword" name="password" placeholder="Your password.."><br>
+
+        <input type="submit" value="Submit"><br>
+        <a href="form">signup</a>
+    </form>
+</div>
