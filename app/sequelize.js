@@ -8,4 +8,6 @@ sequelize.authenticate()
         console.error('Connection failed:', err);
     });
 
+
+
 module.exports = sequelize
