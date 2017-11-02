@@ -39,8 +39,8 @@ module.exports = function(express) {
     console.log("auth", auth);
     const rslt = auth.getRequestToken(function(err, dt) {
       console.log("reslt", dt);
-      token=rslt.oauth_token;
-      secret=rslt.oauth_token_secret;
+      token=dt.oauth_token;
+      secret=dt.oauth_token_secret;
       console.log(token)
 
       res.redirect(dt.redirect);
