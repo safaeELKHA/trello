@@ -15,7 +15,7 @@ module.exports = function(express) {
     res.render("home");
   });
   router.get("/form", function(req,res){
-    res.render('signup')
+    res.render('form')
   });
 
   router.get("/signup", function(req, res) {
