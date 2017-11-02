@@ -14,10 +14,11 @@ module.exports = function(express) {
   router.get("/", function(req, res) {
     res.render("home");
   });
-  router.get("/form", function(req, res) {
+  router.get("/form", function(req,res){
+    res.render('signup')
+  });
 
-
-
+  router.get("/signup", function(req, res) {
     const auth = new Trello.OAuth(
       "cfd9ea37d3dc679f24296217894b4d5a",
       "ddbb42179a6f5d8bd4b9b00fb457d50527fa93c1be97c0869c6f25567f0fa01c",
