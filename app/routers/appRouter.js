@@ -15,18 +15,34 @@ module.exports = function(express) {
     res.render("home");
   });
   router.get("/form", function(req, res) {
+
+
+
     const auth = new Trello.OAuth(
       "cfd9ea37d3dc679f24296217894b4d5a",
       "ddbb42179a6f5d8bd4b9b00fb457d50527fa93c1be97c0869c6f25567f0fa01c",
-      "http://81.171.17.54:3333?user=3&",
+      "http://13.57.10.169:8888?user=3&",
       "test-abacus"
     );
+
     console.log("auth", auth);
     const rslt = auth.getRequestToken(function(err, dt) {
       console.log("reslt", dt);
       res.redirect(dt.redirect);
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
   router.post("/signup", signupController.signup);
   //
   router.post(
