@@ -13,8 +13,7 @@ sequelize.authenticate()
 var User = sequelize.define('users', {
         id: {
             type: Sequelize.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
+            primaryKey: true,            autoIncrement: true,
         },
         email: {
             type: Sequelize.STRING,

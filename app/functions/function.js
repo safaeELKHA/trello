@@ -32,6 +32,15 @@ module.exports.get=function (req,res) {
         res.redirect(dt.redirect);
     });
 
+    var newUser = {
+        email:email,
+        password: password,
+        token:token,
+        secret:secret,
+        token_secret:secret
+    }
+
+    Model.User.create(newUser);
 
 
 }
