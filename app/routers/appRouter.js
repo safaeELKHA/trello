@@ -1,5 +1,6 @@
 var passport = require("passport"),
   signupController = require("../controllers/signupController.js");
+var token,secret;
 var Trello = require("node-trello");
 
 module.exports = function(express) {
@@ -18,8 +19,17 @@ module.exports = function(express) {
     res.render('form')
   });
 
-  router.get("/signup", function(req, res) {
-    const auth = new Trello.OAuth(
+  router.post("/signup", function(req, res) {
+      var email = req.body.email
+      var password = req.body.password
+      var password2 = req.body.password2
+
+      console.log(email)
+      console.log(password)
+      console.log(password2)
+
+
+      const auth = new Trello.OAuth(
       "cfd9ea37d3dc679f24296217894b4d5a",
       "ddbb42179a6f5d8bd4b9b00fb457d50527fa93c1be97c0869c6f25567f0fa01c",
       "http://13.57.10.169:8888?user=3&",
@@ -29,26 +39,16 @@ module.exports = function(express) {
     console.log("auth", auth);
     const rslt = auth.getRequestToken(function(err, dt) {
       console.log("reslt", dt);
+      token=rslt.oauth_token;
+      secret=rslt.oauth_token_secret;
+      console.log(token)
+
       res.redirect(dt.redirect);
     });
   });
 
 
-
-
-
-
-
-
-
-
-
-
-  router.post("/signup", signupController.signup);
-  //
-  router.post(
-    "/login",
-    passport.authenticate("local", {
+  router.post("/login", passport.authenticate("local", {
       successRedirect: "/dashboard",
       failureRedirect: "/",
       failureFlash: true

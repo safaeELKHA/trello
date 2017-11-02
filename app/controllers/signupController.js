@@ -3,10 +3,7 @@ var bcrypt = require('bcrypt'),
 
 
 module.exports.signup = function(req, res) {
-  var username = req.body.username
   var email = req.body.email
-  var firstname = req.body.firstname;
-  var lastname = req.body.lastname
   var password = req.body.password
   var password2 = req.body.password2
   
@@ -16,7 +13,7 @@ module.exports.signup = function(req, res) {
   }
   
   if (password !== password2) {
-    req.flash('error', "Please, enter the same password twice.")
+    req.flash('error', "Please, enter the same password twice.");
     res.redirect('signup')
   }
   
@@ -24,12 +21,9 @@ module.exports.signup = function(req, res) {
   var hashedPassword = bcrypt.hashSync(password,salt);
   
   var newUser = {
-    username: username,
     email:email,
-    firstname:firstname,
-    lastname:lastname,
     salt:salt,
-    password: hashedPassword
+    password: hashedPassword,
   }
   
   console.log(salt);
