@@ -8,17 +8,17 @@ module.exports = function(app) {
   app.use(passport.session())
 
   passport.use(new LocalStrategy(
-    function(username, password, done) {
+    function(email, password, done) {
       Model.User.findOne({
         where: {
-          'username': username
+          'email': email
         }
       }).then(function (user) {
         if (user == null) {
           return done(null, false, { message: 'Incorrect credentials.' })
         }
-        var hashedPassword = bcrypt.hashSync(password,  user.salt)
-        if (user.password === hashedPassword) {
+        //var hashedPassword = bcrypt.hashSync(password,  user.salt)
+        if (user.password === password) {
           return done(null, user)
         }
         return done(null, false, { message: 'Incorrect credentials.' })
