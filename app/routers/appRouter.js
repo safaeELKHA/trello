@@ -20,7 +20,7 @@ module.exports = function(express) {
     res.render('form')
   });
 
-  router.post("/signup",functions.get);
+  router.post("/signup",functions.signup);
 
 
   router.post("/login", passport.authenticate("local", {

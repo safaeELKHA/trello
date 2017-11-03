@@ -1,10 +1,8 @@
 var Model = require('../model/models.js'),
-    signupController = require("../controllers/signupController.js"),
     token,secret,
-    functions=require('../functions/function'),
     Trello = require("node-trello");
 
-module.exports.get=function (req,res) {
+module.exports.signup=function (req,res) {
 
     var email = req.body.email
     var password = req.body.password
