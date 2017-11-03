@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize'),
-    sequelize = new Sequelize('postgres://postgres:123456@192.168.1.22:5432/test')
+    sequelize = new Sequelize('postgres://dbabacus:meknes2018@13.57.10.169:5432/trellotracking')
 
 sequelize.authenticate()
     .then(function(){
@@ -13,7 +13,8 @@ sequelize.authenticate()
 var User = sequelize.define('users', {
         id: {
             type: Sequelize.INTEGER,
-            primaryKey: true,            autoIncrement: true,
+            primaryKey: true,
+            autoIncrement: true
         },
         email: {
             type: Sequelize.STRING,
