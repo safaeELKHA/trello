@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize'),
-    sequelize = new Sequelize('postgres://dbabacus:meknes2018@13.57.10.169:5432/trellotracking')
+    sequelize = new Sequelize('postgres://dbabacus:meknes2018@mytrellotracking.c2qqug8x0jtf.us-west-1.rds.amazonaws.com:5432/trellotracking')
 
 sequelize.authenticate()
     .then(function(){
