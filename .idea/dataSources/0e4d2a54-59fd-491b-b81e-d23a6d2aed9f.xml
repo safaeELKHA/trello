@@ -15,7 +15,8 @@
     </database>
     <schema id="5" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-11-03.10:57:53.468</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-11-03.11:34:44.612</IntrospectionTimestamp>
+      <IntrospectionStateNumber>2012</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -34,5 +35,71 @@
     <schema id="10" parent="2" name="information_schema">
       <ObjectId>13034</ObjectId>
     </schema>
+    <sequence id="11" parent="5" name="users_id_seq">
+      <ObjectId>16396</ObjectId>
+      <StateNumber>2012</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+    </sequence>
+    <table id="12" parent="5" name="users">
+      <ObjectId>16398</ObjectId>
+      <StateNumber>2012</StateNumber>
+    </table>
+    <column id="13" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2012</StateNumber>
+      <SequenceName>users_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="14" parent="12" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="15" parent="12" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="16" parent="12" name="salt">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="17" parent="12" name="token">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="18" parent="12" name="token_secret">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="19" parent="12" name="createdAt">
+      <Position>7</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <column id="20" parent="12" name="updatedAt">
+      <Position>8</Position>
+      <DataType>timestamp with time zone|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>2012</StateNumber>
+    </column>
+    <index id="21" parent="12" name="users_pkey">
+      <ObjectId>16405</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="22" parent="12" name="users_pkey">
+      <ObjectId>16406</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

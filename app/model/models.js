@@ -37,6 +37,6 @@ var User = sequelize.define('users', {
     })
 
 // you can define relationships here
-User.sync({force: true});
+//User.sync({force: true});
 
 module.exports.User = User

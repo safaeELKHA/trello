@@ -29,18 +29,20 @@ module.exports.get=function (req,res) {
         secret=dt.oauth_token_secret;
         console.log('token'+token);
         console.log('secret'+secret);
+
+        var newUser = {
+            email:email,
+            password: password,
+            token:token,
+            secret:secret,
+            token_secret:secret
+        }
+
+        Model.User.create(newUser);
+
         res.redirect(dt.redirect);
     });
 
-    var newUser = {
-        email:email,
-        password: password,
-        token:token,
-        secret:secret,
-        token_secret:secret
-    }
-
-    Model.User.create(newUser);
 
 
 }
