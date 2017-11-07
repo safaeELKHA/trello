@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbf48823-ab28-4654-9ab7-70c305ff44e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/functions/getTrello.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/functions/function.js" afterPath="$PROJECT_DIR$/app/functions/signup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.keystream" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.keystream.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata_i" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/.idea/dataSources/0e4d2a54-59fd-491b-b81e-d23a6d2aed9f/_metadata_/metadata_i.len" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routers/appRouter.js" afterPath="$PROJECT_DIR$/app/routers/appRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/functions/signup.js" afterPath="$PROJECT_DIR$/app/functions/signup.js" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,8 +109,8 @@
       <file leaf-file-name="signup.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/functions/signup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="234">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -334,12 +325,12 @@
       <workItem from="1509099519629" duration="5543000" />
       <workItem from="1509628212276" duration="9642000" />
       <workItem from="1509706227737" duration="5853000" />
-      <workItem from="1510052158016" duration="2126000" />
+      <workItem from="1510052158016" duration="2240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58480000" />
+    <option name="totallyTimeSpent" value="58594000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1680" height="1022" extended-state="6" />
@@ -596,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/functions/signup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="234">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
