@@ -28,7 +28,6 @@ module.exports.signup=function (req,res) {
         secret=dt.oauth_token_secret;
         console.log('token'+token);
         console.log('secret'+secret);
-        console.log('token 11'+token1);
 
 
         var newUser = {
