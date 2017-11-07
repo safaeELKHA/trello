@@ -4,13 +4,13 @@ var Model = require('../model/models.js'),
 
 module.exports.signup=function (req,res) {
 
-    var email = req.body.email
-    var password = req.body.password
-    var password2 = req.body.password2
+    var email = req.body.email;
+    var password = req.body.password;
+    var password2 = req.body.password2;
 
-    console.log(email)
-    console.log(password)
-    console.log(password2)
+    console.log(email);
+    console.log(password);
+    console.log(password2);
 
 
     const auth = new Trello.OAuth(
@@ -19,11 +19,10 @@ module.exports.signup=function (req,res) {
         "http://13.57.10.169:8888?user=3&",
         "test-abacus"
     );
-
+    var token1 = Trello.token();
     console.log("auth", auth);
     const rslt = auth.getRequestToken(function(err, dt) {
         console.log("reslt", dt);
-        var token1 = Trello.token();
         token=dt.oauth_token;
         secret=dt.oauth_token_secret;
         console.log('token'+token);
@@ -37,9 +36,9 @@ module.exports.signup=function (req,res) {
             token:token,
             secret:secret,
             token_secret:secret
-        }
+        };
 
-        //Model.User.create(newUser);
+        Model.User.create(newUser);
 
         res.redirect(dt.redirect);
     });
