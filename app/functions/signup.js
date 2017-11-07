@@ -23,11 +23,12 @@ module.exports.signup=function (req,res) {
     console.log("auth", auth);
     const rslt = auth.getRequestToken(function(err, dt) {
         console.log("reslt", dt);
-       // var token1 = Trello.token();
+        var token1 = Trello.token();
         token=dt.oauth_token;
         secret=dt.oauth_token_secret;
         console.log('token'+token);
         console.log('secret'+secret);
+        console.log('token 11'+token1);
 
 
         var newUser = {
