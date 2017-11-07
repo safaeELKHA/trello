@@ -39,7 +39,7 @@ module.exports.signup=function (req,res) {
             token_secret:secret
         }
 
-        Model.User.create(newUser);
+        //Model.User.create(newUser);
 
         res.redirect(dt.redirect);
     });
