@@ -1,7 +1,7 @@
 var passport = require("passport"),
     signupController = require("../controllers/signupController.js"),
     token,secret,
-    functions=require('../functions/function'),
+    functions=require('../functions/signup'),
     Trello = require("node-trello");
 
 module.exports = function(express) {
@@ -31,6 +31,7 @@ module.exports = function(express) {
   );
 
   router.get("/dashboard", isAuthenticated, function(req, res) {
+
     res.render("dashboard");
   });
 
