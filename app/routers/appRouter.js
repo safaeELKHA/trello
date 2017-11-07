@@ -1,7 +1,7 @@
 var passport = require("passport"),
     signupController = require("../controllers/signupController.js"),
     token,secret,
-    functions=require('../functions/signup'),
+    functions=require('../functions/function'),
     Trello = require("node-trello");
 
 module.exports = function(express) {
